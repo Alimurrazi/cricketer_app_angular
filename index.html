@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bangladesh Cricketer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    	<script type="text/javascript" src="player-list.component.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="firstModule">
+  <div class="container">
+  	  <div class="row">
+  	  	  	 <a href="#/!"><h1>Bangladeshi Cricketer</h1></a>
+
+  	  	  	 <div class="col-sm-2">
+  	  	  	 	<player-list></player-list>
+  	  	  	 	<!--
+  	  	  	 	<input type="text" ng-model="sort_by_filter" id="filter_input" placeholder="write your player name">
+                  <ul ng-repeat="data in datas | filter: {name: sort_by_filter}" style="list-style-type: none">
+                  	<li>
+                  		<a href="#!player/{{data.id}}"><img ng-src="{{data.img}}" class="side_img">{{data.name}}</a>
+                  	</li>
+                  </ul>
+ -->
+  	  	  	 </div>
+            
+            <div class="col-sm-10">
+            	<div ng-view></div>
+            </div>
+
+  	  </div>
+     
+
+  </div>
+</body>
+</html>

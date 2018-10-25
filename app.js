@@ -1,4 +1,4 @@
-var firstApp=angular.module('firstModule',['ngRoute']);
+var firstApp=angular.module('firstModule',['playerList','ngRoute']);
 
 
 /*
